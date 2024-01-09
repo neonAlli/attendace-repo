@@ -12,18 +12,15 @@
         <div class="row">
             <div class="col">
                 table
-                <table class="table">
+                <table class="table table-hover">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">First</th>
                         <th scope="col">Last</th>
-                        <th scope="col">Street</th>
-                        <th scope="col">Barangay</th>
                         <th scope="col">Gender</th>
-                        <th scope="col">Age</th>
-                        <th scope="col">Birthday</th>
-                        <th scope="col">Invited by</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Attended</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -31,43 +28,52 @@
                         <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
-                        <td>Malaria</td>
-                        <td>185</td>
                         <td>Male</td>
-                        <td>185</td>
-                        <td>8/04/2000</td>
-                        <td>Genos</td>
+                        <td>*hamburger*</td>
+                        <td>*checkbox*</td>
                       </tr>
                     </tbody>
                   </table>
             </div>
-            <div class="col-md-auto">
-                forms
+            <div class="col-md">
                 <div class="row ">
-                    <div class="col">fname</div>
-                    <div class="col">lname</div>
+                    <label for="" class="form-label">First name</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Put first name here">
+                    <label for="" class="form-label">Last name</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Put Last name here">
                 </div>
                 <div class="row ">
-                    <div class="col">addStreet</div>
-                    <div class="col">addBrgy</div>
+                    <label for="" class="form-label">Full Address</label>
+                    <textarea name="" id="" rows="2" class="form-control"placeholder="Put address here"></textarea>
                 </div>
                 <div class="row">
-                    <div class="col">male</div>
-                    <div class="col">female</div>
-                </div>
-                <div class="row">
-                    <div class="col">bday</div>
-                </div>
-                <div class="row">
-                    <div class="col">invite</div>
-                </div>
-                <div class="row">
-                    <div class="col">yes</div>
-                    <div class="col">no</div>
-                </div>
-                <div class="row">
-                    <div class="col">button</div>
+                    <label for="" class="form-label">Gender</label>
+                    <select name="" id="" class="form-select form-select-sm">
+                        <option selected>Click to open</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
 
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="" class="form-label">Birthdate</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="MM/DD/YYYY">
+                </div>
+                <div class="row">
+                    <label for="" class="form-label">Invitation</label>
+                    <input type="text" class="form-control form-control-sm" placeholder="Who invited you?">
+                </div>
+                <div class="row">
+                    <label for="" class="form-label">Status</label>
+                    <select name="" id="" class="form-select form-select-sm">
+                        <option selected>Click to open</option>
+                        <option value="1">First timer</option>
+                        <option value="2">Second timer</option>
+                        <option value="3">Third timer</option>
+                    </select>
+                </div>
+                <div class="row p-3">
+                    <button class="btn btn-success">Enter</button>
                 </div>
             </div>
             
